@@ -24,14 +24,13 @@ namespace CalculoLucro.Entidades
             var valorValidado = ValidarOsValores(quantVendas);
 
             // validando se o booleano foi verdadeiro
-            if (valorValidado == true)
+            if (valorValidado == false)
             {
-                // caso booleano seja verdade o valor é enviado para a função de tabela
-                Tabela(quantVendas);
+                //Caso falso recebe erro e finaliza o programa
+                Console.WriteLine("\nHouve um erro com o valor de venda informado!");   
             }
-            //Caso falso recebe erro e finaliza o programa
-            Console.WriteLine("\nHouve um erro com o valor de venda informado!");            
-
+            // caso booleano seja verdade o valor é enviado para a função de tabela
+            Tabela(quantVendas);
         }
 
         // função privada para validar o valor de vendas que foi inserido pelo usuario
