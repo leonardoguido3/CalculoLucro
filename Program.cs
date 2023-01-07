@@ -6,6 +6,7 @@ namespace CalculoLucro
     {
         static void Main(string[] args)
         {
+            // instanciando a classe e chamando a função para captura de valores
             CalculoLucroProduto calculo = new CalculoLucroProduto();
             calculo.CapturaValores();
         }
